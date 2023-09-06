@@ -1,0 +1,4 @@
+/home/andrey/GameCollections/Debug/CMakeFiles/GameFigure.dir
+/home/andrey/GameCollections/Debug/CMakeFiles/edit_cache.dir
+/home/andrey/GameCollections/Debug/CMakeFiles/rebuild_cache.dir
+/home/andrey/GameCollections/Debug/CMakeFiles/GameFigure_autogen.dir

@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+a7381a6d66c9b05b57acf53d035b8e5f CMakeFiles/GameFigure_autogen
