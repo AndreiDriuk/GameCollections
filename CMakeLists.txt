@@ -18,6 +18,10 @@ set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
         mainwindow.h
+        qgraphslabel.cpp
+        qgraphslabel.h
+        qbordergraphslabel.cpp
+        qbordergraphslabel.h
         mainwindow.ui
 )
 
@@ -55,5 +59,5 @@ set_target_properties(GameFigure PROPERTIES
 )
 
 if(QT_VERSION_MAJOR EQUAL 6)
-    qt_finalize_executable(GameFigure)
+    qt_finalize_executable(GameFigureFinal)
 endif()

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/GameFigure_autogen"
-  "GameFigure_autogen/include/ui_mainwindow.h"
   "GameFigure_autogen/mocs_compilation.cpp"
 )
 

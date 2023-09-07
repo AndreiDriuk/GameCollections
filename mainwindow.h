@@ -14,6 +14,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    QPixmap original;
 
     //void paintEvent(QPaintEvent*);
     //void keyPressEvent(QKeyEvent* pe);
