@@ -10,6 +10,7 @@ CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o
  /home/andrey/GameCollections/Debug/GameFigure_autogen/EWIEGA46WW/moc_qgraphslabel.cpp
  /home/andrey/GameCollections/Debug/GameFigure_autogen/mocs_compilation.cpp
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -113,9 +114,11 @@ CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h
@@ -124,6 +127,7 @@ CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o
 CMakeFiles/GameFigure.dir/main.cpp.o
  /home/andrey/GameCollections/main.cpp
  /home/andrey/GameCollections/mainwindow.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -228,10 +232,15 @@ CMakeFiles/GameFigure.dir/main.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdesktopwidget.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h
@@ -241,6 +250,7 @@ CMakeFiles/GameFigure.dir/mainwindow.cpp.o
  /home/andrey/GameCollections/mainwindow.cpp
  /home/andrey/GameCollections/mainwindow.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -277,6 +287,7 @@ CMakeFiles/GameFigure.dir/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qmath.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmutex.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h
@@ -358,6 +369,7 @@ CMakeFiles/GameFigure.dir/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenuBar
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QStatusBar
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
@@ -371,6 +383,7 @@ CMakeFiles/GameFigure.dir/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenu.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenubar.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstatusbar.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h

@@ -4,6 +4,7 @@
 #include <QObject>
 #include "qgraphslabel.h"
 
+
 class QBorderGraphsLabel : public QGraphsLabel
 {
     Q_OBJECT

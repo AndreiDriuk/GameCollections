@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <qpushbutton.h>
+#include <QVector>
+#include <QLabel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,6 +18,15 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     QPixmap original;
+    int nX;
+    int nY;
+    QVector<QLabel*> vectorLabels;
+    QLabel* upL;
+    QLabel* downL;
+    QLabel* rightL;
+    QLabel* leftL;
+    int numberEmpty;
+
 
     //void paintEvent(QPaintEvent*);
     //void keyPressEvent(QKeyEvent* pe);

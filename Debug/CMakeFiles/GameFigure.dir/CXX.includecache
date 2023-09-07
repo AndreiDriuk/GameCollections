@@ -19,14 +19,26 @@ QPainter
 -
 QMouseEvent
 -
+qmath.h
+-
 
 /home/andrey/GameCollections/mainwindow.h
 QMainWindow
+-
+qpushbutton.h
+-
+QVector
+-
+QLabel
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
 qvariant.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
+qvector.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 QtCore/qglobal.h
@@ -374,6 +386,14 @@ initializer_list
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h
 QtCore/qnamespace.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qmath.h
+QtCore/qglobal.h
+-
+QtCore/qalgorithms.h
+-
+cmath
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h
@@ -1152,6 +1172,16 @@ qstatusbar.h
 qwidget.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtGui/qicon.h
+-
+QtGui/qkeysequence.h
+-
+QtWidgets/qwidget.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h
 QtWidgets/qtwidgetsglobal.h
 -
@@ -1286,6 +1316,12 @@ QtWidgets/qtwidgetsglobal.h
 QtWidgets/qmenu.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qabstractbutton.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
 QtWidgets/qtwidgetsglobal.h
 -
@@ -1356,8 +1392,6 @@ QtWidgets/QApplication
 QtWidgets/QFrame
 -
 QtWidgets/QGridLayout
--
-QtWidgets/QLabel
 -
 QtWidgets/QMainWindow
 -

@@ -25,13 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 45,
+				"line" : 46,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 51,
+				"line" : 52,
 				"parent" : 0
 			}
 		]
@@ -133,7 +133,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "",
+				"fragment" : "-no-pie",
 				"role" : "flags"
 			},
 			{

@@ -4,24 +4,55 @@
 #include <QPixmap>
 #include <QPainter>
 #include <QMouseEvent>
+#include <qmath.h>
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+
 {
     ui->setupUi(this);
-
+    nX = 5;
+    nY = 5;
 
     QSize sizeFrame = ui->frame_2->size();
-    ui->label->setGeometry(0, 0, sizeFrame.width()/3,  sizeFrame.height()/3);
-    ui->label_2->setGeometry(sizeFrame.width()/3+1, 0, sizeFrame.width()/3,  sizeFrame.height()/3);
-    ui->label_3->setGeometry(sizeFrame.width()/3*2+2, 0, sizeFrame.width()/3,  sizeFrame.height()/3);
-    ui->label_4->setGeometry(0, sizeFrame.height()/3+1, sizeFrame.width()/3,  sizeFrame.height()/3);
-    ui->label_5->setGeometry(sizeFrame.width()/3+1,sizeFrame.height()/3+1, sizeFrame.width()/3,  sizeFrame.height()/3);
-    ui->label_6->setGeometry(sizeFrame.width()/3*2+2, sizeFrame.height()/3+1, sizeFrame.width()/3,  sizeFrame.height()/3);
-    ui->label_7->setGeometry(0, sizeFrame.height()/3*2+2, sizeFrame.width()/3,  sizeFrame.height()/3);
-    ui->label_8->setGeometry(sizeFrame.width()/3+1, sizeFrame.height()/3*2+2, sizeFrame.width()/3,  sizeFrame.height()/3);
-    ui->label_9->setGeometry(sizeFrame.width()/3*2+2, sizeFrame.height()/3*2+2, sizeFrame.width()/3,  sizeFrame.height()/3);
+    for(int i =0; i<nX; ++i ){
+        for(int j = 0; j<nY; ++j ){
+            QLabel *label = new QLabel(ui->frame_2);
+            label->setGeometry((sizeFrame.width()/nX+1)*j, (sizeFrame.height()/nY+1)*i, sizeFrame.width()/nX,  sizeFrame.height()/nY);
+            vectorLabels.push_back(label);
+        }
+    }
+    ui->frame_2->setFocusPolicy(Qt::StrongFocus);
+
+    if ( original.load("My.jpg") )
+    {
+        int originalWidth = original.size().width();
+        int originalSize = original.size().height();
+        int minSize =std::min(originalWidth, originalSize);
+
+        QRect cutRect(300,0,minSize, minSize );
+        original = original.copy(cutRect);
+        originalWidth = original.size().width();
+        originalSize = original.size().height();
+
+        for(int i = 0; i<nX; ++i){
+            for(int j = 0; j<nY; ++j){
+                QRect rect(originalWidth/nX*j, originalSize/nY*i, originalWidth/nX, originalSize/nY);
+                QPixmap cropped = original.copy(rect);
+                QSize label_size =  vectorLabels[i*nX+j]->size();
+                vectorLabels[i*nX+j]->setPixmap(cropped.scaled(label_size));
+            }
+        }
+        QPixmap pixmapW(QSize(minSize/nX, minSize/nY));
+        pixmapW.fill(Qt::white);
+        vectorLabels[0]->setPixmap(pixmapW);
+        numberEmpty =0;
+
+    }
+    else
+         std::cout << "fail" << std::endl;
 
 }
 
@@ -32,77 +63,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::paintEvent(QPaintEvent *)
 {
-    QPainter painter(this);
-    painter.setPen(Qt::red);
-    painter.setBrush(Qt::blue);
-    painter.translate(0, rect().height());
 
-    //QIcon ButtonIcon(pixmap);
 
-    if ( original.load("My.jpg") )
-    {
-        int originalWidth = original.size().width();
-        int originalSize = original.size().height();
-
-        QRect rect1(0, 0, originalWidth/3, originalSize/3);
-        QPixmap cropped1 = original.copy(rect1);
-
-        QRect rect2(originalWidth/3, 0, originalWidth/3, originalSize/3);
-        QPixmap cropped2 = original.copy(rect2);
-
-        QRect rect3(originalWidth/3*2, 0, originalWidth/3, originalSize/3);
-        QPixmap cropped3 = original.copy(rect3);
-
-        QRect rect4(0, originalSize/3, originalWidth/3, originalSize/3);
-        QPixmap cropped4 = original.copy(rect4);
-
-        QRect rect5(originalWidth/3, originalSize/3, originalWidth/3, originalSize/3);
-        QPixmap cropped5 = original.copy(rect5);
-
-        QRect rect6(originalWidth/3*2, originalSize/3, originalWidth/3, originalSize/3);
-        QPixmap cropped6 = original.copy(rect6);
-
-        QRect rect7(0, originalSize/3*2, originalWidth/3, originalSize/3);
-        QPixmap cropped7 = original.copy(rect7);
-
-        QRect rect8(originalWidth/3, originalSize/3*2, originalWidth/3, originalSize/3);
-        QPixmap cropped8 = original.copy(rect8);
-
-        QRect rect9(originalWidth/3*2, originalSize/3*2, originalWidth/3, originalSize/3);
-        QPixmap cropped9 = original.copy(rect9);
-
-        //QSize sImage = pixmap.size();
-        QSize label_size =  ui->label->size();
-        QSize label2_size = ui->label_2->size();
-        QSize label3_size = ui->label_3->size();
-        QSize label4_size = ui->label_4->size();
-        QSize label5_size = ui->label_5->size();
-        QSize label6_size = ui->label_6->size();
-        QSize label7_size = ui->label_7->size();
-        QSize label8_size = ui->label_8->size();
-        QSize label9_size = ui->label_9->size();
-        //int heightImage = sImage;
-         //std::cout << "succes" << std::endl;
-         ui->label->setPixmap(cropped1.scaled(label_size));
-         ui->label_2->setPixmap(cropped2.scaled(label2_size));
-         ui->label_3->setPixmap(cropped3.scaled(label3_size));
-         ui->label_4->setPixmap(cropped4.scaled(label4_size));
-         ui->label_5->setPixmap(cropped5.scaled(label5_size));
-         ui->label_6->setPixmap(cropped6.scaled(label6_size));
-         ui->label_7->setPixmap(cropped7.scaled(label7_size));
-         ui->label_8->setPixmap(cropped8.scaled(label8_size));
-         ui->label_9->setPixmap(cropped9.scaled(label9_size));
-         //ui->widget->setWindowIcon(ButtonIcon);
-         //ui->pushButton->setIcon(ButtonIcon);
-         //ui->widget->seW tIconSize(pixmap.rect().size());
-         //ui->label->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
-         //painter.drawPixmap( QPoint(0, -200), pixmap );
-    }
-    else
-         std::cout << "fail" << std::endl;
-
-//    painter.drawPie(QRect(-35, -35, 70, 70), 0, 90 * 16);//works
-//    painter.drawRect(QRect(30, -5, 20, 10));            //works
 }
 
 void MainWindow::keyPressEvent(QKeyEvent *pe)
@@ -115,26 +77,53 @@ void MainWindow::keyPressEvent(QKeyEvent *pe)
 //    QRect newRect(rectangleCurrent.x()+1, rectangleCurrent.y(), rectangleCurrent.width(), rectangleCurrent.height());
 //    std::cout<<rectangleCurrent.x()<<std::endl;
 //    ui->label_4->move(rectangleCurrent.x()+1, rectangleCurrent.y());
+//    ui->label_4->setFocus();
+    QLabel* lab =  vectorLabels[6];
+    QRect  rectangleCurrent = lab->geometry();
+    int moveY = ui->frame_2->height()/nY+1;
+    int moveX = ui->frame_2->width()/nX+1;
 
-    QRect  rectangleCurrent = ui->label_4->geometry();
-    int moveY = ui->frame_2->height()/3+1;
-    int moveX = ui->frame_2->width()/3+1;
     switch (pe->key()) {
     case Qt::Key_Up:
-        ui->label_4->move(rectangleCurrent.x(), rectangleCurrent.y()-moveY);
-        std::cout<<"Up"<<std::endl;
+        if(numberEmpty<(nX*nY-nX)){
+            QPixmap maptemp = vectorLabels[numberEmpty+nX]->pixmap()->copy();
+            vectorLabels[numberEmpty+nX]->setPixmap(*(vectorLabels[numberEmpty]->pixmap()));
+            vectorLabels[numberEmpty]->setPixmap(maptemp);
+            numberEmpty+=nX;
+            std::cout<<"Up"<<std::endl;
+        }
+
+
         break;
     case Qt::Key_Down:
-        ui->label_4->move(rectangleCurrent.x(), rectangleCurrent.y()+moveY);
-        std::cout<<"Down"<<std::endl;
+        if(numberEmpty>(nX-1)){
+            QPixmap maptemp = vectorLabels[numberEmpty-nX]->pixmap()->copy();
+            vectorLabels[numberEmpty-nX]->setPixmap(*(vectorLabels[numberEmpty]->pixmap()));
+            vectorLabels[numberEmpty]->setPixmap(maptemp);
+            numberEmpty-=nX;
+            std::cout<<"Up"<<std::endl;
+        }
         break;
-    case Qt::Key_Left:
-        std::cout<<"left"<<std::endl;
-        ui->label_4->move(rectangleCurrent.x()-moveX, rectangleCurrent.y());
+    case Qt::Key_Left:{
+
+        int t =((numberEmpty+1)%nX);
+        if(((numberEmpty+1)%nX)){
+            QPixmap maptemp = vectorLabels[numberEmpty+1]->pixmap()->copy();
+            vectorLabels[numberEmpty+1]->setPixmap(*(vectorLabels[numberEmpty]->pixmap()));
+            vectorLabels[numberEmpty]->setPixmap(maptemp);
+            numberEmpty++;
+            std::cout<<"Up"<<std::endl;
+        }
+    }
         break;
     case Qt::Key_Right:
-        std::cout<<"Right"<<std::endl;
-        ui->label_4->move(rectangleCurrent.x()+moveX, rectangleCurrent.y());
+        if((numberEmpty%nX)){
+            QPixmap maptemp = vectorLabels[numberEmpty-1]->pixmap()->copy();
+            vectorLabels[numberEmpty-1]->setPixmap(*(vectorLabels[numberEmpty]->pixmap()));
+            vectorLabels[numberEmpty]->setPixmap(maptemp);
+            numberEmpty--;
+            std::cout<<"Up"<<std::endl;
+        }
         break;
     default:
         std::cout<<pe->key()<<std::endl;

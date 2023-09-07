@@ -9,6 +9,7 @@ CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: GameFigure_
 CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: GameFigure_autogen/EWIEGA46WW/moc_qgraphslabel.cpp
 CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: GameFigure_autogen/mocs_compilation.cpp
 CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
 CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
 CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -112,9 +113,11 @@ CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/includ
 CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
 CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
 CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow
+CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h
 CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h
 CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h
 CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h
+CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
 CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
 CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h
 CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h
@@ -123,6 +126,7 @@ CMakeFiles/GameFigure.dir/GameFigure_autogen/mocs_compilation.cpp.o: /usr/includ
 
 CMakeFiles/GameFigure.dir/main.cpp.o: ../main.cpp
 CMakeFiles/GameFigure.dir/main.cpp.o: ../mainwindow.h
+CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
 CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
 CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -227,10 +231,15 @@ CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qv
 CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
 CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
 CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
+CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
 CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow
+CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h
 CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
 CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdesktopwidget.h
+CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h
+CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h
 CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h
+CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
 CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
 CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h
 CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h
@@ -240,6 +249,7 @@ CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidget
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: ../mainwindow.cpp
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: ../mainwindow.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
+CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -276,6 +286,7 @@ CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/Qt
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h
+CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmath.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qmutex.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h
@@ -357,6 +368,7 @@ CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/Qt
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenuBar
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QStatusBar
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
+CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
@@ -370,6 +382,7 @@ CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/Qt
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenu.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenubar.h
+CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstatusbar.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h
