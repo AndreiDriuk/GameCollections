@@ -248,6 +248,7 @@ CMakeFiles/GameFigure.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidget
 
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: ../mainwindow.cpp
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: ../mainwindow.h
+CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QThread
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
@@ -298,6 +299,7 @@ CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/Qt
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qpair.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocessordetection.h
+CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qrandom.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h
@@ -318,6 +320,7 @@ CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/Qt
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcore-config.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
+CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qthread.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qurlquery.h

@@ -5,6 +5,8 @@
 #include <QPainter>
 #include <QMouseEvent>
 #include <qmath.h>
+#include <qrandom.h>
+#include <QThread>
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -13,8 +15,8 @@ MainWindow::MainWindow(QWidget *parent)
 
 {
     ui->setupUi(this);
-    nX = 5;
-    nY = 5;
+    nX = 3;
+    nY = 3;
 
     QSize sizeFrame = ui->frame_2->size();
     for(int i =0; i<nX; ++i ){
@@ -43,6 +45,7 @@ MainWindow::MainWindow(QWidget *parent)
                 QPixmap cropped = original.copy(rect);
                 QSize label_size =  vectorLabels[i*nX+j]->size();
                 vectorLabels[i*nX+j]->setPixmap(cropped.scaled(label_size));
+                vectorLabels[i*nX+j]->show();
             }
         }
         QPixmap pixmapW(QSize(minSize/nX, minSize/nY));
@@ -53,6 +56,8 @@ MainWindow::MainWindow(QWidget *parent)
     }
     else
          std::cout << "fail" << std::endl;
+
+    mix();
 
 }
 
@@ -67,6 +72,54 @@ void MainWindow::paintEvent(QPaintEvent *)
 
 }
 
+void MainWindow::mix(){
+     QThread::sleep(5);
+    QRandomGenerator gen;
+    for(int i = 0; i<1000; ++i){
+        int step = gen.bounded(0, 4);
+        std::cout<<step<<std::endl;
+        switch (step) {
+        case 0:
+            if(numberEmpty<(nX*nY-nX)){
+                QPixmap maptemp = vectorLabels[numberEmpty+nX]->pixmap()->copy();
+                vectorLabels[numberEmpty+nX]->setPixmap(*(vectorLabels[numberEmpty]->pixmap()));
+                vectorLabels[numberEmpty]->setPixmap(maptemp);
+                numberEmpty+=nX;
+            }
+
+
+            break;
+        case 1:
+            if(numberEmpty>(nX-1)){
+                QPixmap maptemp = vectorLabels[numberEmpty-nX]->pixmap()->copy();
+                vectorLabels[numberEmpty-nX]->setPixmap(*(vectorLabels[numberEmpty]->pixmap()));
+                vectorLabels[numberEmpty]->setPixmap(maptemp);
+                numberEmpty-=nX;
+            }
+            break;
+        case 2:{
+
+            int t =((numberEmpty+1)%nX);
+            if(((numberEmpty+1)%nX)){
+                QPixmap maptemp = vectorLabels[numberEmpty+1]->pixmap()->copy();
+                vectorLabels[numberEmpty+1]->setPixmap(*(vectorLabels[numberEmpty]->pixmap()));
+                vectorLabels[numberEmpty]->setPixmap(maptemp);
+                numberEmpty++;
+            }
+        }
+            break;
+        case 3:
+            if((numberEmpty%nX)){
+                QPixmap maptemp = vectorLabels[numberEmpty-1]->pixmap()->copy();
+                vectorLabels[numberEmpty-1]->setPixmap(*(vectorLabels[numberEmpty]->pixmap()));
+                vectorLabels[numberEmpty]->setPixmap(maptemp);
+                numberEmpty--;
+            }
+            break;
+
+        }
+    }
+}
 void MainWindow::keyPressEvent(QKeyEvent *pe)
 {
     //std::cout<<"Double clicked"<<std::endl;
@@ -78,10 +131,10 @@ void MainWindow::keyPressEvent(QKeyEvent *pe)
 //    std::cout<<rectangleCurrent.x()<<std::endl;
 //    ui->label_4->move(rectangleCurrent.x()+1, rectangleCurrent.y());
 //    ui->label_4->setFocus();
-    QLabel* lab =  vectorLabels[6];
-    QRect  rectangleCurrent = lab->geometry();
-    int moveY = ui->frame_2->height()/nY+1;
-    int moveX = ui->frame_2->width()/nX+1;
+//    QLabel* lab =  vectorLabels[6];
+//    QRect  rectangleCurrent = lab->geometry();
+//    int moveY = ui->frame_2->height()/nY+1;
+//    int moveX = ui->frame_2->width()/nX+1;
 
     switch (pe->key()) {
     case Qt::Key_Up:
@@ -90,7 +143,6 @@ void MainWindow::keyPressEvent(QKeyEvent *pe)
             vectorLabels[numberEmpty+nX]->setPixmap(*(vectorLabels[numberEmpty]->pixmap()));
             vectorLabels[numberEmpty]->setPixmap(maptemp);
             numberEmpty+=nX;
-            std::cout<<"Up"<<std::endl;
         }
 
 
@@ -101,7 +153,6 @@ void MainWindow::keyPressEvent(QKeyEvent *pe)
             vectorLabels[numberEmpty-nX]->setPixmap(*(vectorLabels[numberEmpty]->pixmap()));
             vectorLabels[numberEmpty]->setPixmap(maptemp);
             numberEmpty-=nX;
-            std::cout<<"Up"<<std::endl;
         }
         break;
     case Qt::Key_Left:{
@@ -112,7 +163,6 @@ void MainWindow::keyPressEvent(QKeyEvent *pe)
             vectorLabels[numberEmpty+1]->setPixmap(*(vectorLabels[numberEmpty]->pixmap()));
             vectorLabels[numberEmpty]->setPixmap(maptemp);
             numberEmpty++;
-            std::cout<<"Up"<<std::endl;
         }
     }
         break;
@@ -122,7 +172,6 @@ void MainWindow::keyPressEvent(QKeyEvent *pe)
             vectorLabels[numberEmpty-1]->setPixmap(*(vectorLabels[numberEmpty]->pixmap()));
             vectorLabels[numberEmpty]->setPixmap(maptemp);
             numberEmpty--;
-            std::cout<<"Up"<<std::endl;
         }
         break;
     default:

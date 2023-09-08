@@ -249,6 +249,7 @@ CMakeFiles/GameFigure.dir/main.cpp.o
 CMakeFiles/GameFigure.dir/mainwindow.cpp.o
  /home/andrey/GameCollections/mainwindow.cpp
  /home/andrey/GameCollections/mainwindow.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QThread
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
@@ -299,6 +300,7 @@ CMakeFiles/GameFigure.dir/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qpair.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocessordetection.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qrandom.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h
@@ -319,6 +321,7 @@ CMakeFiles/GameFigure.dir/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcore-config.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qthread.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qurlquery.h

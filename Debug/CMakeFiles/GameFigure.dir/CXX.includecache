@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/andrey/GameCollections/main.cpp
+mainwindow.h
+/home/andrey/GameCollections/mainwindow.h
+QApplication
+-
+
 /home/andrey/GameCollections/mainwindow.cpp
 mainwindow.h
 /home/andrey/GameCollections/mainwindow.h
@@ -21,6 +27,10 @@ QMouseEvent
 -
 qmath.h
 -
+qrandom.h
+-
+QThread
+-
 
 /home/andrey/GameCollections/mainwindow.h
 QMainWindow
@@ -31,6 +41,10 @@ QVector
 -
 QLabel
 -
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QThread
+qthread.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qthread.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
 qvariant.h
@@ -480,6 +494,14 @@ QtCore/qnamespace.h
 QtCore/qglobal.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrandom.h
+QtCore/qglobal.h
+-
+algorithm
+-
+random
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h
 QtCore/qmargins.h
 -
@@ -644,6 +666,16 @@ QtCore/qlocale.h
 QtCore/qscopedpointer.h
 -
 stdio.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qthread.h
+QtCore/qobject.h
+-
+future
+-
+functional
+-
+limits.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h

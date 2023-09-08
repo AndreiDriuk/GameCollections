@@ -26,6 +26,7 @@ public:
     QLabel* rightL;
     QLabel* leftL;
     int numberEmpty;
+    void mix();
 
 
     //void paintEvent(QPaintEvent*);
